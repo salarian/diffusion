@@ -1,4 +1,5 @@
-name: diffusion
+name: base
+channels:
   - pytorch
   - conda-forge
   - defaults
@@ -8,12 +9,15 @@ dependencies:
   - black
   - flake8
   - python=3.10
+  # others
+  - tqdm
   # ML
   - pytorch
   - torchvision
   - cudatoolkit=11.3
   - huggingface_hub
+  - pip
   - pip:
-      - transformers==4.19.2 
+      - transformers
       - diffusers 
       - invisible-watermark

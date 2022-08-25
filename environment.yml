@@ -1,5 +1,5 @@
-name: py_app_base
-channels:
+name: diffusion
+  - pytorch
   - conda-forge
   - defaults
 dependencies:
@@ -8,3 +8,12 @@ dependencies:
   - black
   - flake8
   - python=3.10
+  # ML
+  - pytorch
+  - torchvision
+  - cudatoolkit=11.3
+  - huggingface_hub
+  - pip:
+      - transformers==4.19.2 
+      - diffusers 
+      - invisible-watermark

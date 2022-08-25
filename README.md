@@ -2,7 +2,7 @@
 
 # Developer notes
 Don't forget to update the name of the project:
-- In README.md, replace {Project Name} with the correct name
+- In README.md, replace Diffusion with the correct name
 - In [environment.yml](environment.yml), replace `py_app_base` with the correct name
 - In [test.yml](.github/workflows/test.yml), replance `py_app_base` with the correct name
 - Fix the links for the github workflow badges on top of README.md
@@ -22,14 +22,14 @@ $ conda env create -f environment.yml
 Don't forget to activte the environment before running the scripts or the unit tests
 
 ```bash
-$ conda activate {Project Name}
+$ conda activate diffusion
 ```
 
 ### Updateing conda environment
 In case the [environment.yml](environment.yml) file has changed, the conda environment can be updated using:
 
 ```bash
-$ conda env update --name {Project Name} --file environment.yml --prune
+$ conda env update --name diffusion --file environment.yml --prune
 ```
 
 ## Unit tests
